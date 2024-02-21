@@ -11,13 +11,24 @@ body{
     
 }
 
+:root{
+    --color-primary: #812181;
+    --gris:rgb(236, 236, 236);
+}
+
+.bg-black{
+    background-color: black;
+}
+.bg-gris{
+    background-color: var(--gris); 
+}
+
 .contenedor{
     max-width: 1600px;
     margin: 0 auto auto;
 }
 
 .header{
-
 }
 
 .header_menu{
@@ -53,9 +64,7 @@ body{
 .nav_link--secundario{
     background-color: black;
     color: white;
-    padding: 12px 26px;
-    
-    
+    padding: 12px 26px; 
 }
 
 .nav_boton{
@@ -85,3 +94,186 @@ body{
     font-weight: lighter;
     font-size: 1.5rem;
 }
+
+
+
+
+/* ------------------------- */
+/*--------------- baner negro ---------------*/
+.llamado{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 30px 0px 30px 0px;
+    font-size: 20px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.llamado_fecha{
+    border: solid 1px white;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+
+/* ------------------EXPLORE------------ */
+.section__explore{
+    height: 100vh;
+}
+
+.explore{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    grid-template: 
+    "uno dos tres"300px 
+    "cuatro cinco seis" 300px 
+    "siete ocho nueve" 300px/ auto auto auto
+    ;
+}
+
+.centrar{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.uno{
+    grid-area: uno;
+}
+
+.dos{
+    grid-area: dos;
+}
+.imagen{
+    width: 600px;
+}
+
+.grafico{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    /* justify-content: center; */
+    flex-direction: column;
+    gap: 3rem;   
+}
+
+.flecha{
+    background-color: transparent;
+    border: none;
+    font-size: 42px;
+}
+
+.tres{
+    grid-area: tres;
+
+}
+
+.cuatro{
+    grid-area: cuatro;   
+}
+
+.text_rotar{
+    display: flex;
+    rotate: -90deg;
+    justify-content: center;
+    align-items: start;
+    font-weight: 800;
+}
+
+.text_rotar--modi{
+    display: flex;
+    rotate: 90deg;
+    justify-content: center;
+}
+
+.cinco{
+    grid-area: dos;
+}
+
+.seis{
+    grid-area: seis;
+}
+
+.siete{
+    grid-area: siete;
+    display: flex;
+    justify-content: start;
+    padding: 0px 30px;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+}
+
+.ocho{
+    grid-area: ocho; 
+}
+
+.nueve{
+    grid-area: nueve;
+    display: flex;
+    justify-content: end;
+    padding: 0px 30px;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+}
+
+
+/* ----------------CARD-------------------- */
+.botonn{
+    background: var(--color-primary);
+    padding: 12px 24px;
+    color: #f2f2f2;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.botonn--blanco{
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+.contenedor__card{
+    display: flex;
+    gap: 6rem;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: solid 3px rgb(255, 255, 255);
+    padding: 22px;
+    width: 300px;
+    height: auto;
+    gap: 2rem;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 1px #6e6e6e;
+    background-color: var(--gris);
+    
+}
+
+.card_titulo{
+    text-align: center;
+    font-size: 3rem;
+    padding: 5px 0px;
+}
+
+.card_parrafo{
+    text-align: center;
+}
+
+.card--border{
+    border: solid 2px var(--color-primary);
+}
+
